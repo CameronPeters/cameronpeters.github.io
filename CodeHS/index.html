@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(58, 107, 170);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: rgb(107, 218, 218);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color:rgb(107, 218, 218);
+ 
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2>CODE HS</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <p><b><a href="file:///Users/cameronpeters/Desktop/Index%20Html/cameronpeters.github.io/index.html" 
+          target="_blank">Return to Home</a></b></p>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Cameron Peters</h1>
+
+    <a>
+        <img src="CodeHS.png" style="width:510px;height:600px;border:0;" class="rounded-circle">
+      </a>
+
+  </article>
+</section>
+
+
+</body>
+</html>
